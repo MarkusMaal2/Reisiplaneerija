@@ -13,8 +13,19 @@ import Home from './src/screens/app/Home';
 import {
   useColorScheme,
 } from 'react-native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Stack = createNativeStackNavigator();
+
+const Tab = createBottomTabNavigator();
+
+const MyTabs = () => {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={Home}  options={{headerShown: false}}/>
+    </Tab.Navigator>
+  )
+}
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -22,7 +33,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
-        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen name="Home" component={MyTabs} options={{headerShown: false}}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
