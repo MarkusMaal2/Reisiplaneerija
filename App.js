@@ -14,6 +14,7 @@ import {
   useColorScheme,
 } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Sightings from './src/screens/app/Sightings';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,7 +23,8 @@ const Tab = createBottomTabNavigator();
 const MyTabs = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home}  options={{headerShown: false}}/>
+      <Tab.Screen name="Reisid" component={Home}  options={{headerShown: false}}/>
+      <Tab.Screen name="Vaatamisväärsused" component={Sightings} options={{headerShown: false}}></Tab.Screen>
     </Tab.Navigator>
   )
 }
@@ -32,8 +34,8 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Home'>
-        <Stack.Screen name="Home" component={MyTabs} options={{headerShown: false}}></Stack.Screen>
+      <Stack.Navigator initialRouteName='StackNav'>
+        <Stack.Screen name="StackNav" component={MyTabs} options={{headerShown: false}}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

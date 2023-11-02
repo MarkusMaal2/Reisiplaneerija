@@ -6,7 +6,7 @@ import SimpleText from "../../../components/SimpleText";
 const Home = () => {
     return (
         <View style={styles.container}>
-            <SimpleText style={styles.text} message="It works!!!"></SimpleText>
+            <SimpleText style={styles.text} message={"It works!!!"}></SimpleText>
         </View>
     );
 }
