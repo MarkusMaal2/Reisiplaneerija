@@ -15,6 +15,7 @@ import {
 } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Sightings from './src/screens/app/Sightings';
+import Notes from './src/screens/app/Notes';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ const MyTabs = () => {
     <Tab.Navigator>
       <Tab.Screen name="Reisid" component={Home}  options={{headerShown: false}}/>
       <Tab.Screen name="Vaatamisväärsused" component={Sightings} options={{headerShown: false}}></Tab.Screen>
+      <Tab.Screen name="Märkmed" component={Notes} options={{headerShown: false}}></Tab.Screen>
     </Tab.Navigator>
   )
 }
