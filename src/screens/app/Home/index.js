@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 import styles from "./styles";
-import SimpleText from "../../../components/SimpleText";
+import SampleText from "../../../components/SampleText";
 
 const Home = () => {
     return (
         <View style={styles.container}>
-            <SimpleText style={styles.text} message={"It works!!!"}></SimpleText>
+            <SampleText style={styles.text} message={"It works!!!"}></SampleText>
         </View>
     );
 }

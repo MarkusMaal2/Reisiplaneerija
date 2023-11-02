@@ -1,12 +1,12 @@
 import React from "react";
 import { View } from "react-native";
-import SimpleText from "../../../components/SimpleText";
+import SampleText from "../../../components/SampleText";
 import styles from "./styles";
 
 const Sightings = () => {
     return (
         <View style={styles.container}>
-            <SimpleText style={styles.text} message="Sightings screen"></SimpleText>
+            <SampleText style={styles.text} message="Sightings screen"></SampleText>
         </View>
     )
 }

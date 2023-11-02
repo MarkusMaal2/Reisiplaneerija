@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const SimpleText = ({style, message}) => {
+const SampleText = ({style, message}) => {
     return (
         <Text style={style}>{message}</Text>
     );
 }
 
-export default SimpleText;
+export default SampleText;
