@@ -14,4 +14,8 @@ export default styles = StyleSheet.create({
         fontSize: 25,
         color: colors.black,
     },
+
+    button: {
+        marginTop: 10,
+    }
 })
