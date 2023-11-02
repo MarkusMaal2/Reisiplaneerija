@@ -1,13 +1,13 @@
 import React from "react";
-import { View } from "react-native";
+import { View, SafeAreaView } from "react-native";
 import SampleText from "../../../components/SampleText";
 import styles from "./styles";
 
 const Notes = () => {
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <SampleText message={"Notes screen"} style={styles.text}></SampleText>
-        </View>
+        </SafeAreaView>
     )
 }
 

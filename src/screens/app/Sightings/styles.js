@@ -11,7 +11,6 @@ export default styles = StyleSheet.create({
     },
 
     text: {
-        paddingTop: 20,
         textAlign: 'center',
         fontSize: 25,
         color: colors.secondary,

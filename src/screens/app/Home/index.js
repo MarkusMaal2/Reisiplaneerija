@@ -2,12 +2,13 @@ import React from "react";
 import { Text, View } from "react-native";
 import styles from "./styles";
 import SampleText from "../../../components/SampleText";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = () => {
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <SampleText style={styles.text} message={"It works!!!"}></SampleText>
-        </View>
+        </SafeAreaView>
     );
 }
 
