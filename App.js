@@ -32,8 +32,6 @@ const MyTabs = () => {
 }
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='StackNav'>
