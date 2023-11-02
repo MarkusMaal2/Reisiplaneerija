@@ -1,10 +1,10 @@
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet, Dimensions, Platform } from "react-native";
 import { colors } from "../../../utils/colors";
 const windowHeight = Dimensions.get('window').height;
 
 export default styles = StyleSheet.create({
     container: {
-        padding: 20,
+        padding: Platform.OS !== 'ios' ? 20 : 0,
         backgroundColor: colors.white,
         minHeight: windowHeight,
     },
