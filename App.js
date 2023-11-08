@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import { React, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/screens/app/Home';
@@ -16,6 +16,9 @@ import {
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Sightings from './src/screens/app/Sightings';
 import Notes from './src/screens/app/Notes';
+import Splash from './src/screens/auth/Splash';
+import SignIn from './src/screens/auth/SignIn';
+import SignUp from './src/screens/auth/SignUp';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,11 +34,30 @@ const MyTabs = () => {
   )
 }
 
+const isSignedIn = false;
 const App = () => {
+  console.log(isSignedIn + " :current signed in status")
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='StackNav'>
-        <Stack.Screen name="StackNav" component={MyTabs} options={{headerShown: false}}></Stack.Screen>
+      <Stack.Navigator initialRouteName='SplashScreen'>
+      {
+          isSignedIn
+          ?
+          (
+            <>
+              <Stack.Screen name="Tabs" component={MyTabs} options={{headerShown: false}} />
+            </>
+          )
+          :
+          (
+            <>
+              <Stack.Screen name="SplashScreen" component={Splash} options={{headerShown: false}}></Stack.Screen>
+              <Stack.Screen name="SignUpScreen" component={SignUp} options={{headerShown: false}}></Stack.Screen>
+              <Stack.Screen name="SignInScreen" component={SignIn} options={{headerShown: false}}></Stack.Screen>
+            </>
+          )
+      }
+
       </Stack.Navigator>
     </NavigationContainer>
   );

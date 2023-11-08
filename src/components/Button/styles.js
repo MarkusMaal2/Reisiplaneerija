@@ -3,16 +3,17 @@ import { colors } from "../../utils/colors";
 
 export default styles = StyleSheet.create({
     container: {
-        display: 'flex',
         flexDirection: "row",
         justifyContent: "center",
-        minWidth: '100%',
+        alignItems: 'center',
+        borderColor: colors.black,
+        borderWidth: 3,
+        backgroundColor: colors.white,
     },
-    text: {
-        backgroundColor: colors.primary,
+    title: {
         minWidth: 80,
-        padding: 15,
-        color: colors.white,
+        color: colors.black,
         textAlign: 'center',
+        fontSize: 28,
     },
 })
