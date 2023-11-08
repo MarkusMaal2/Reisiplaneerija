@@ -7,7 +7,9 @@ import Input from "../../../components/Input";
 const SignUp = () => {
     return (
         <SafeAreaView style={styles.bg}>
-            <Input></Input>
+            <Input label="Name"></Input>
+            <Input label="Email"></Input>
+            <Input label="Password"></Input>
         </SafeAreaView>
     )
 }
