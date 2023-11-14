@@ -11,6 +11,7 @@ export default styles = StyleSheet.create({
         flexDirection: 'row',
         position: 'relative',
         marginBottom: 80,
+        fontFamily: 'Inria Serif',
     },
 
     bg: {

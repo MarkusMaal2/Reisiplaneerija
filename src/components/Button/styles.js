@@ -15,5 +15,7 @@ export default styles = StyleSheet.create({
         color: colors.black,
         textAlign: 'center',
         fontSize: 28,
+        fontFamily: 'Inria Serif',
+        fontWeight: 'bold',
     },
 })
