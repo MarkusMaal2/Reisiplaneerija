@@ -6,7 +6,7 @@ export default styles = StyleSheet.create({
     container: {
         padding: Platform.OS !== 'ios' ? 20 : 0,
         backgroundColor: colors.background2,
-        minHeight: windowHeight,
+        minHeight: '100%',
     },
 
     text: {

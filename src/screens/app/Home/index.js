@@ -7,17 +7,17 @@ import Button from "../../../components/Button";
 import Header from "../../../components/Header";
 import FloatButton from "../../../components/FloatButton";
 
-const Home = () => {
+const Home = ({navigation}) => {
     const [title, setTitle] = useState('It works!!!');
-    const onClick = () => {
-        console.log("Click event handler!");
+    const newTrip = () => {
+        navigation.navigate('NewTrip');
     }
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.container}>
                 <Header title={"My Trips"}></Header>
+                <FloatButton onClick={newTrip}></FloatButton>
             </View>
-            <FloatButton onClick={onClick}></FloatButton>
         </SafeAreaView>
     );
 }

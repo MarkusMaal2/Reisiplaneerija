@@ -19,16 +19,26 @@ import Notes from './src/screens/app/Notes';
 import Splash from './src/screens/auth/Splash';
 import SignIn from './src/screens/auth/SignIn';
 import SignUp from './src/screens/auth/SignUp';
+import NewTrip from './src/screens/app/NewTrip';
 
 
 const Stack = createNativeStackNavigator();
 
 const Tab = createBottomTabNavigator();
 
+const TripStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={Home} options={{headerShown: false}}></Stack.Screen>
+      <Stack.Screen name="NewTrip" component={NewTrip} options={{headerShown: false}}></Stack.Screen>
+    </Stack.Navigator>
+  )
+}
+
 const MyTabs = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Reisid" component={Home}  options={{headerShown: false}}/>
+      <Tab.Screen name="Reisid" component={TripStack}  options={{headerShown: false}}/>
       <Tab.Screen name="Vaatamisväärsused" component={Sightings} options={{headerShown: false}}></Tab.Screen>
       <Tab.Screen name="Märkmed" component={Notes} options={{headerShown: false}}></Tab.Screen>
     </Tab.Navigator>

@@ -12,7 +12,7 @@ export default styles = StyleSheet.create({
         alignSelf: 'center',
         justifyContent: 'center',
         right: 18,
-        bottom: 185,
+        top: '82%',
     },
 
     text: {
