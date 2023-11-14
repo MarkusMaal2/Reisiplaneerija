@@ -20,6 +20,7 @@ import Splash from './src/screens/auth/Splash';
 import SignIn from './src/screens/auth/SignIn';
 import SignUp from './src/screens/auth/SignUp';
 
+
 const Stack = createNativeStackNavigator();
 
 const Tab = createBottomTabNavigator();
@@ -35,7 +36,7 @@ const MyTabs = () => {
 }
 
 const App = () => {
-  const [isSignedIn, setSignedIn] = useState(false);
+  const [isSignedIn, setSignedIn] = useState(true);
   console.log(isSignedIn + " :current signed in status")
   return (
     <NavigationContainer>

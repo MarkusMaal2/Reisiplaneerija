@@ -5,7 +5,7 @@ const windowHeight = Dimensions.get('window').height;
 export default styles = StyleSheet.create({
     container: {
         padding: Platform.OS !== 'ios' ? 20 : 0,
-        backgroundColor: colors.white,
+        backgroundColor: colors.background2,
         minHeight: windowHeight,
     },
 
