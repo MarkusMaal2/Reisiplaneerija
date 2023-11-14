@@ -16,5 +16,26 @@ export default styles = StyleSheet.create({
         backgroundColor: colors.white,
         minHeight: 40,
         padding: 10,
-    }
+    },
+
+    clock: {
+        width: 22,
+        position: 'absolute',
+        right: 9,
+        top: -17,
+    },
+
+    dropdownIcon: {
+        width: 22,
+        position: 'absolute',
+        right: 15,
+        top: 8,
+    },
+
+    pinIcon: {
+        width: 22,
+        position: 'absolute',
+        right: 9,
+        top: -10,
+    },
 })
