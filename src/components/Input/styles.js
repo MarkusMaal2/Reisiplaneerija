@@ -5,7 +5,7 @@ export default styles = StyleSheet.create({
         maxWidth: 258,
         flexDirection: 'column',
         alignSelf: 'center',
-        marginBottom: 40,
+        marginBottom: 30,
     },
     
     label: {
@@ -14,7 +14,7 @@ export default styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 28,
         padding: 5,
-        marginBottom: 7,
+        marginBottom: 4,
         fontFamily: 'Inria Serif',
         fontWeight: 'bold',
     },

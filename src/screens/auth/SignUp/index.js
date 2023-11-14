@@ -6,10 +6,15 @@ import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import Link from "../../../components/Link";
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
     const signInHandler = () => {
-        console.log("signInHandler");
+        navigation.navigate('SignInScreen');
     }
+
+    const signUpHandler = () => {
+        console.log("signUpHandler");
+    }
+
     return (
         <SafeAreaView style={styles.bg}>
             <View style={styles.imgContainer}>
@@ -17,8 +22,8 @@ const SignUp = () => {
             </View>
             <Input label="Name"></Input>
             <Input label="Email"></Input>
-            <Input label="Password"></Input>
-            <Button title="Sign up" style={styles.smallButton}></Button>
+            <Input label="Password" password={true}></Input>
+            <Button title="Sign up" style={[styles.smallButton, styles.buttonText]} onPress={signUpHandler}></Button>
             <View style={styles.notice}>
                 <Text style={styles.noticeText}>Already have an</Text>
                 <Text style={styles.noticeText}>account?</Text>

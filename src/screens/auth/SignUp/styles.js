@@ -10,22 +10,16 @@ export default styles = StyleSheet.create({
         minHeight: '100%',
     },
     imgContainer: {
-        marginTop: 48,
         justifyContent: 'center',
         flexDirection: 'row',
         position: 'relative',
         marginLeft: 26,
         marginRight: 15,
+        marginBottom: -20,
     },
     road: {
         justifyContent: 'center',
-    },
-    smallButton: {
-        minWidth: 140,
-        minHeight: 50,
-        fontSize: 20,
-        alignSelf: 'center',
-        flexDirection: 'row',
+        width: '100%',
     },
 
     notice: {
@@ -37,7 +31,19 @@ export default styles = StyleSheet.create({
     noticeText: {
         textAlign: 'center',
         fontSize: 19,
-        fontFamily: 'Inria Serif',
+        fontFamily: 'Inria Serif Bold',
     },
 
+    smallButton: {
+        minWidth: 140,
+        minHeight: 50,
+        fontSize: 20,
+        alignSelf: 'center',
+        flexDirection: 'row',
+        marginTop: 15,
+    },
+
+    buttonText: {
+        fontSize: 20,
+    }
 })

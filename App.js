@@ -34,8 +34,8 @@ const MyTabs = () => {
   )
 }
 
-const isSignedIn = false;
 const App = () => {
+  const [isSignedIn, setSignedIn] = useState(false);
   console.log(isSignedIn + " :current signed in status")
   return (
     <NavigationContainer>
