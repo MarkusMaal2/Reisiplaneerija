@@ -38,4 +38,31 @@ export default styles = StyleSheet.create({
         right: 9,
         top: -10,
     },
+
+    modalWrapper: {
+        backgroundColor: "rgba(0,0,0,0.2)",
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex: 1
+    },
+    modalContent: {
+        backgroundColor: colors.white,
+        borderRadius: 8,
+        padding: 16,
+        width: '80%'
+    },
+    optionTitle: {
+        color: colors.black,
+        marginBottom: 16,
+        fontSize: 16,
+    },
+    optionText: {
+        color: colors.black,
+        paddingVertical: 4,
+        fontSize: 15,
+    },
+    selectedOption: {
+        color: colors.blue,
+        fontWeight: 'bold',
+    }
 })

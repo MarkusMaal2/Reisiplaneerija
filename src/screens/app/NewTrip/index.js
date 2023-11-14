@@ -19,7 +19,7 @@ const NewTrip = ({navigation}) => {
                 <FormInput type="datetime" label="Time" style={styles.halfWidthField}></FormInput>
                 <FormInput type="text" label="Duration" style={styles.halfWidthField}></FormInput>
             </View>
-            <FormInput type="select" label="Transportation" style={styles.fullWidthField}></FormInput>
+            <FormInput type="select" label="Transportation" style={styles.fullWidthField} dropDownItems={["Test A", "Test B", "Test C"]}></FormInput>
             <FormInput type="location" label="Housing" style={styles.fullWidthField}></FormInput>
             <FormInput type="text" label="Goals" style={styles.fullWidthField}></FormInput>
             <Button title={"Add trip"} style={[styles.button, styles.buttonFontSize]}></Button>
