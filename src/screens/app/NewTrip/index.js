@@ -16,8 +16,8 @@ const NewTrip = ({navigation}) => {
             <Header title="New Trip" onBack={back}></Header>
             <FormInput type="location" label="Destination" style={styles.fullWidthField}></FormInput>
             <View style={styles.doubleInput}>
-                <FormInput type="datetime" label="Time" style={styles.halfWidthField}></FormInput>
-                <FormInput type="text" label="Duration" style={styles.halfWidthField}></FormInput>
+                <FormInput type="datetime" label="From:" style={styles.halfWidthField}></FormInput>
+                <FormInput type="datetime" label="To:" style={styles.halfWidthField}></FormInput>
             </View>
             <FormInput type="select" label="Transportation" style={styles.fullWidthField} dropDownItems={["Test A", "Test B", "Test C"]}></FormInput>
             <FormInput type="location" label="Housing" style={styles.fullWidthField}></FormInput>

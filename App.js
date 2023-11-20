@@ -30,7 +30,6 @@ const TripStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} options={{headerShown: false}}></Stack.Screen>
-      <Stack.Screen name="NewTrip" component={NewTrip} options={{headerShown: false}}></Stack.Screen>
     </Stack.Navigator>
   )
 }
@@ -57,6 +56,7 @@ const App = () => {
           (
             <>
               <Stack.Screen name="Tabs" component={MyTabs} options={{headerShown: false}} />
+              <Stack.Screen name="NewTrip" component={NewTrip} options={{headerShown: false}}></Stack.Screen>
             </>
           )
           :
