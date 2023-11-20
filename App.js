@@ -20,6 +20,7 @@ import Splash from './src/screens/auth/Splash';
 import SignIn from './src/screens/auth/SignIn';
 import SignUp from './src/screens/auth/SignUp';
 import NewTrip from './src/screens/app/NewTrip';
+import TripInfo from './src/screens/app/TripInfo';
 
 
 const Stack = createNativeStackNavigator();
@@ -57,6 +58,7 @@ const App = () => {
             <>
               <Stack.Screen name="Tabs" component={MyTabs} options={{headerShown: false}} />
               <Stack.Screen name="NewTrip" component={NewTrip} options={{headerShown: false}}></Stack.Screen>
+              <Stack.Screen name="TripInfo" component={TripInfo} options={{headerShown: false}}></Stack.Screen>
             </>
           )
           :

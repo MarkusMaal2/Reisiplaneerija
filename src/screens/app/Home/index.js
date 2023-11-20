@@ -15,8 +15,8 @@ const Home = ({navigation}) => {
         navigation.navigate('NewTrip');
     }
 
-    const tapTest = () => {
-        console.log("Tap test")
+    const tripInfo = () => {
+        navigation.navigate("TripInfo")
     }
 
     const futureTrips = [{name: "Bali", image: "../../../assets/sampleimg.png"},
@@ -31,9 +31,9 @@ const Home = ({navigation}) => {
         <Header title={"My Trips"}></Header>
             <ScrollView>
                 <View style={styles.container}>
-                    <Trip location={"Italy"} label={"Ongoing"} onPress={tapTest} imageURL={"https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg"}></Trip>
-                    <TripCarousel trips={futureTrips} label={"Future"} onPress={tapTest}></TripCarousel>
-                    <TripCarousel trips={pastTrips} label={"Recent trips"} onPress={tapTest}></TripCarousel>
+                    <Trip location={"Italy"} label={"Ongoing"} onPress={tripInfo} imageURL={"https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg"}></Trip>
+                    <TripCarousel trips={futureTrips} label={"Future"} onPress={tripInfo}></TripCarousel>
+                    <TripCarousel trips={pastTrips} label={"Recent trips"} onPress={tripInfo}></TripCarousel>
                 </View>
             </ScrollView>
             <FloatButton onClick={newTrip}></FloatButton>
