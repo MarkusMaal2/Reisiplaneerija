@@ -7,6 +7,7 @@ import Button from "../../../components/Button";
 import Header from "../../../components/Header";
 import FloatButton from "../../../components/FloatButton";
 import Trip from "../../../components/Trip";
+import TripCarousel from "../../../components/TripCarousel";
 
 const Home = ({navigation}) => {
     const [title, setTitle] = useState('It works!!!');
@@ -17,15 +18,25 @@ const Home = ({navigation}) => {
     const tapTest = () => {
         console.log("Tap test")
     }
+
+    const futureTrips = [{name: "Bali", image: "../../../assets/sampleimg.png"},
+                         {name: "Saaremaa", image: "../../../assets/sampleimg.png"},
+                         {name: "Italy", image: "https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg"}]
+
+    const pastTrips =  [{name: "Norra", image: "../../../assets/sampleimg.png"},
+                        {name: "Horvaatia", image: "../../../assets/sampleimg.png"},
+                        {name: "Italy", image: "https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg"}]
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.container}>
-                <Header title={"My Trips"}></Header>
-                <ScrollView>
-                    <Trip location={"Italy"} label={"Ongoing"} onPress={tapTest} imageURL={"../../assets/sampleimg.png"}></Trip>
-                </ScrollView>
-                <FloatButton onClick={newTrip}></FloatButton>
-            </View>
+        <Header title={"My Trips"}></Header>
+            <ScrollView>
+                <View style={styles.container}>
+                    <Trip location={"Italy"} label={"Ongoing"} onPress={tapTest} imageURL={"https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg"}></Trip>
+                    <TripCarousel trips={futureTrips} label={"Future"} onPress={tapTest}></TripCarousel>
+                    <TripCarousel trips={pastTrips} label={"Recent trips"} onPress={tapTest}></TripCarousel>
+                </View>
+            </ScrollView>
+            <FloatButton onClick={newTrip}></FloatButton>
         </SafeAreaView>
     );
 }

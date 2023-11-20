@@ -7,6 +7,7 @@ export default styles = StyleSheet.create({
         padding: Platform.OS !== 'ios' ? 20 : 0,
         backgroundColor: colors.background2,
         minHeight: '100%',
+        paddingBottom: '25%',
     },
 
     text: {
