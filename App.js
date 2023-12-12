@@ -21,6 +21,8 @@ import SignIn from './src/screens/auth/SignIn';
 import SignUp from './src/screens/auth/SignUp';
 import NewTrip from './src/screens/app/NewTrip';
 import TripInfo from './src/screens/app/TripInfo';
+import NewSighting from './src/screens/app/NewSighting';
+import SightInfo from './src/screens/app/SightInfo';
 
 
 const Stack = createNativeStackNavigator();
@@ -59,6 +61,8 @@ const App = () => {
               <Stack.Screen name="Tabs" component={MyTabs} options={{headerShown: false}} />
               <Stack.Screen name="NewTrip" component={NewTrip} options={{headerShown: false}}></Stack.Screen>
               <Stack.Screen name="TripInfo" component={TripInfo} options={{headerShown: false}}></Stack.Screen>
+              <Stack.Screen name="NewSighting" component={NewSighting} options={{headerShown: false}}></Stack.Screen>
+              <Stack.Screen name="SightInfo" component={SightInfo} options={{headerShown: false}}></Stack.Screen>
             </>
           )
           :
