@@ -1,18 +1,21 @@
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet, Dimensions, Platform } from "react-native";
 import { colors } from "../../../utils/colors";
 const windowHeight = Dimensions.get('window').height;
 
-
 export default styles = StyleSheet.create({
     container: {
-        padding: 20,
-        backgroundColor: colors.white,
-        minHeight: windowHeight,
+        padding: Platform.OS !== 'ios' ? 20 : 0,
+        backgroundColor: colors.background2,
+        minHeight: '100%',
+        paddingBottom: '25%',
     },
 
     text: {
         textAlign: 'center',
         fontSize: 25,
-        color: colors.secondary,
+        color: colors.black,
     },
+    button: {
+        top: '92%'
+    }
 })

@@ -12,14 +12,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1DD61AC3F02F458280FBEA28 /* InriaSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29E5D6168CF548ACBDF5DC3A /* InriaSerif-Regular.ttf */; };
+		587545A975734D9497625BEE /* InriaSerif-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41FD5BB24D304AE3B793EB2B /* InriaSerif-LightItalic.ttf */; };
+		7226965261EF48529733BCB3 /* InriaSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0BE973FBC0D4EA2BF7C1251 /* InriaSerif-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Reisiplaneerija2-Reisiplaneerija2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Reisiplaneerija2-Reisiplaneerija2Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		7226965261EF48529733BCB3 /* InriaSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0BE973FBC0D4EA2BF7C1251 /* InriaSerif-Bold.ttf */; };
 		9D9503065DEB4FCCB38EED7F /* InriaSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFB7D214CCEB47FF92D3869D /* InriaSerif-BoldItalic.ttf */; };
-		CEF724572C6946C6A1E80EFE /* InriaSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6D513948EA74745B59E3C5D /* InriaSerif-Italic.ttf */; };
 		B3422046D2C64D4C9E6AA779 /* InriaSerif-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4731E494EE794F9D8762D6CB /* InriaSerif-Light.ttf */; };
-		587545A975734D9497625BEE /* InriaSerif-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41FD5BB24D304AE3B793EB2B /* InriaSerif-LightItalic.ttf */; };
-		1DD61AC3F02F458280FBEA28 /* InriaSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29E5D6168CF548ACBDF5DC3A /* InriaSerif-Regular.ttf */; };
+		CEF724572C6946C6A1E80EFE /* InriaSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6D513948EA74745B59E3C5D /* InriaSerif-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,19 +43,19 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Reisiplaneerija2/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Reisiplaneerija2/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Reisiplaneerija2-Reisiplaneerija2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reisiplaneerija2-Reisiplaneerija2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E5D6168CF548ACBDF5DC3A /* InriaSerif-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "InriaSerif-Regular.ttf"; path = "../src/assets/fonts/InriaSerif-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Reisiplaneerija2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reisiplaneerija2.debug.xcconfig"; path = "Target Support Files/Pods-Reisiplaneerija2/Pods-Reisiplaneerija2.debug.xcconfig"; sourceTree = "<group>"; };
+		41FD5BB24D304AE3B793EB2B /* InriaSerif-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "InriaSerif-LightItalic.ttf"; path = "../src/assets/fonts/InriaSerif-LightItalic.ttf"; sourceTree = "<group>"; };
+		4731E494EE794F9D8762D6CB /* InriaSerif-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "InriaSerif-Light.ttf"; path = "../src/assets/fonts/InriaSerif-Light.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Reisiplaneerija2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reisiplaneerija2.release.xcconfig"; path = "Target Support Files/Pods-Reisiplaneerija2/Pods-Reisiplaneerija2.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Reisiplaneerija2-Reisiplaneerija2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reisiplaneerija2-Reisiplaneerija2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Reisiplaneerija2-Reisiplaneerija2Tests/Pods-Reisiplaneerija2-Reisiplaneerija2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Reisiplaneerija2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reisiplaneerija2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Reisiplaneerija2/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Reisiplaneerija2-Reisiplaneerija2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reisiplaneerija2-Reisiplaneerija2Tests.release.xcconfig"; path = "Target Support Files/Pods-Reisiplaneerija2-Reisiplaneerija2Tests/Pods-Reisiplaneerija2-Reisiplaneerija2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B6D513948EA74745B59E3C5D /* InriaSerif-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "InriaSerif-Italic.ttf"; path = "../src/assets/fonts/InriaSerif-Italic.ttf"; sourceTree = "<group>"; };
+		C0BE973FBC0D4EA2BF7C1251 /* InriaSerif-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "InriaSerif-Bold.ttf"; path = "../src/assets/fonts/InriaSerif-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		C0BE973FBC0D4EA2BF7C1251 /* InriaSerif-Bold.ttf */ = {isa = PBXFileReference; name = "InriaSerif-Bold.ttf"; path = "../src/assets/fonts/InriaSerif-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FFB7D214CCEB47FF92D3869D /* InriaSerif-BoldItalic.ttf */ = {isa = PBXFileReference; name = "InriaSerif-BoldItalic.ttf"; path = "../src/assets/fonts/InriaSerif-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B6D513948EA74745B59E3C5D /* InriaSerif-Italic.ttf */ = {isa = PBXFileReference; name = "InriaSerif-Italic.ttf"; path = "../src/assets/fonts/InriaSerif-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4731E494EE794F9D8762D6CB /* InriaSerif-Light.ttf */ = {isa = PBXFileReference; name = "InriaSerif-Light.ttf"; path = "../src/assets/fonts/InriaSerif-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		41FD5BB24D304AE3B793EB2B /* InriaSerif-LightItalic.ttf */ = {isa = PBXFileReference; name = "InriaSerif-LightItalic.ttf"; path = "../src/assets/fonts/InriaSerif-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		29E5D6168CF548ACBDF5DC3A /* InriaSerif-Regular.ttf */ = {isa = PBXFileReference; name = "InriaSerif-Regular.ttf"; path = "../src/assets/fonts/InriaSerif-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FFB7D214CCEB47FF92D3869D /* InriaSerif-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "InriaSerif-BoldItalic.ttf"; path = "../src/assets/fonts/InriaSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +118,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4144CEC8112D4428886F7261 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE973FBC0D4EA2BF7C1251 /* InriaSerif-Bold.ttf */,
+				FFB7D214CCEB47FF92D3869D /* InriaSerif-BoldItalic.ttf */,
+				B6D513948EA74745B59E3C5D /* InriaSerif-Italic.ttf */,
+				4731E494EE794F9D8762D6CB /* InriaSerif-Light.ttf */,
+				41FD5BB24D304AE3B793EB2B /* InriaSerif-LightItalic.ttf */,
+				29E5D6168CF548ACBDF5DC3A /* InriaSerif-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,20 +174,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		4144CEC8112D4428886F7261 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				C0BE973FBC0D4EA2BF7C1251 /* InriaSerif-Bold.ttf */,
-				FFB7D214CCEB47FF92D3869D /* InriaSerif-BoldItalic.ttf */,
-				B6D513948EA74745B59E3C5D /* InriaSerif-Italic.ttf */,
-				4731E494EE794F9D8762D6CB /* InriaSerif-Light.ttf */,
-				41FD5BB24D304AE3B793EB2B /* InriaSerif-LightItalic.ttf */,
-				29E5D6168CF548ACBDF5DC3A /* InriaSerif-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 

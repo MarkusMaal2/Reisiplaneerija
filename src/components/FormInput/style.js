@@ -64,5 +64,56 @@ export default styles = StyleSheet.create({
     selectedOption: {
         color: colors.blue,
         fontWeight: 'bold',
-    }
+    },
+    uploadContainer: {
+        width: 360  ,
+        height: 212,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: colors.gray,
+        borderStyle: 'dotted',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginRight: 8
+    },
+    uploadCircle: {
+        width: 64,
+        height: 64,
+        borderRadius: 20,
+        backgroundColor: colors.lightGrey,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    uploadPlus: {
+        color: colors.black,
+        fontSize: 64,
+        marginTop: -4
+    },uploadedImage: {
+        width: 355,
+        height: 212,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: colors.gray,
+        borderStyle: 'dotted',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginRight: 8
+    },editOverlay: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    editIcon: {
+        width: 32,
+        height: 32,
+        tintColor: colors.white, 
+    },
 })
