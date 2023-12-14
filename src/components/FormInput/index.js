@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TextInput, TouchableOpacity, Pressable, Image, View, Text, Modal } from "react-native";
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 
 import styles from "./style";
 
-const FormInput = ({ type, label, style, dropDownItems = [] }) => {
+const FormInput = ({ type, label, style, dropDownItems = [], value }) => {
     /*
         this component support the following props:
         type - sets the type of form input
@@ -21,6 +21,7 @@ const FormInput = ({ type, label, style, dropDownItems = [] }) => {
 
         if (result?.assets?.length > 0) {
             const newImage = result.assets[0];
+            console.log(newImage)
             setImages([newImage]);
             setLoading(false);
         } else {
@@ -44,7 +45,7 @@ const FormInput = ({ type, label, style, dropDownItems = [] }) => {
             return (
                 <View style={[styles.container, style]}>
                     <Text style={styles.label}>{label}</Text>
-                    <TextInput style={styles.textBox}></TextInput>
+                    <TextInput style={styles.textBox} value={value}></TextInput>
                 </View>
             );
         case "datetime":
@@ -98,7 +99,7 @@ const FormInput = ({ type, label, style, dropDownItems = [] }) => {
                 <View style={[styles.container, style]}>
                     <Text style={styles.label}>{label}</Text>
                     <View style={styles.inputContainer}>
-                        <TextInput style={styles.textBox}></TextInput>
+                        <TextInput style={styles.textBox} value={value}></TextInput>
                         <Image resizeMode="contain" source={require('../../assets/pin.png')} style={styles.pinIcon}></Image>
                     </View>
                 </View>

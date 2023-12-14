@@ -30,9 +30,7 @@ const Sightings = ({ navigation }) => {
                 selectedDestination={selectedDestination}
                 onSelectDestination={(destinationId) => setSelectedDestination(destinationId)}
             />
-            <ScrollView>
                 <SightList navigation={navigation} selectedTrip={selectedDestination}></SightList>
-            </ScrollView>
             <FloatButton containerStyle={styles.button} onClick={newSighting}></FloatButton>
         </SafeAreaView>
     )

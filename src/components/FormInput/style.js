@@ -66,7 +66,7 @@ export default styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     uploadContainer: {
-        width: 340,
+        width: 360  ,
         height: 212,
         borderRadius: 8,
         borderWidth: 1,

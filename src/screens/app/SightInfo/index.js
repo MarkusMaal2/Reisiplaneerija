@@ -1,21 +1,24 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 import styles from './style';
+import Header from '../../../components/Header';
+import FormInput from '../../../components/FormInput';
+import Button from '../../../components/Button';
 
 const SightInfo = ({ route, navigation }) => {
   const { sight } = route.params;
-
-  // Implement your logic to display sight details
+  const back = () => {
+    navigation.goBack();
+  }
 
   return (
-    <View style={styles.container}>
-      <Text>Sight Information</Text>
-      <Text>Name: {sight.name}</Text>
-      <Text>Location: {sight.location}</Text>
-      <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Text>Go Back</Text>
-      </TouchableOpacity>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Header title="Modify Sighting" onBack={back}></Header>
+      <FormInput type="location" label="Location" style={styles.fullWidthField} value={sight.location}></FormInput>
+      <FormInput type="text" label="Name of Sighting" style={styles.fullWidthField} value={sight.name}></FormInput>
+      <FormInput type="image" label="Image" style={styles.fullWidthField}></FormInput>
+      <Button title={"Modify"} style={[styles.button, styles.buttonFontSize]}></Button>
+    </SafeAreaView>
   );
 };
 

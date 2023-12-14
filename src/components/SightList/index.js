@@ -2,12 +2,30 @@ import React, { useState } from 'react';
 import { View, Text, Image, FlatList, TouchableOpacity } from 'react-native';
 import styles from './style';
 
+
+const imageList = [
+  {
+    sightId: 1,
+    imageName: "sorve.png"
+  },
+  {
+    sightId: 2,
+    imageName: "kuressaareloss.png"
+  },
+  {
+    sightId: 3,
+    imageName: "colosseum.png"
+  },
+]
+
+
+
 const dummySights = [
   {
     id: 1,
     trip: 1,
     name: 'Sõrve Lighthouse',
-    location: 'Sääre, Saare',
+    location: 'Sääre, Saaremaa',
     image: require('../../assets/sorve.png'),
   },
   {
@@ -30,7 +48,10 @@ const SightList = ({ navigation, selectedTrip }) => {
   const [selectedSight, setSelectedSight] = useState(null);
 
   const handleModifySight = (sight) => {
-    navigation.navigate('SightInfo', {sight})
+    let index = imageList.findIndex((imageInfo) => imageInfo.sightId === sight.id);
+    sight.image = '../../assets/' + imageList[index].imageName;
+    console.log(sight);
+    navigation.navigate('SightInfo', { sight })
   };
 
   // Filter sights based on the selected trip
@@ -41,8 +62,6 @@ const SightList = ({ navigation, selectedTrip }) => {
   const renderItem = ({ item }) => (
     <TouchableOpacity
       style={styles.sightContainer}
-      onPress={() => setSelectedSight(item)}
-      onLongPress={() => handleModifySight(item)}
     >
       <Image source={item.image} style={styles.sightImage} />
       <View style={styles.sightInfo}>
